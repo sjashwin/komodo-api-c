@@ -9,12 +9,12 @@ using json = nlohmann::json;
 
 class Komodo::Kmd{
     private:
-        void getCurl(std::string method, json params);
         long port;
         CURL *curl;
         struct curl_slist *headers;
         std::string host, username, password;
     public:
+        void getCurl(std::string method, json params);
         std::string str_buffer;
         json response;
         // Komodo Address module: Asset chain API.

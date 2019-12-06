@@ -14,12 +14,8 @@ int main(){
         "pass",
         14355L
     );
-    std::vector<std::string> params;
-    //params.push_back("10");
-    // getinfo
-    // kmd->generateCurl("getinfo", params);
-    // stop server
-    obj->getinfo(params);
+    json params;
+    obj->getCurl("stop", params);
     std::cout << obj->str_buffer << std::endl;
     std::cout << obj->response << std::endl;
     return 0;
