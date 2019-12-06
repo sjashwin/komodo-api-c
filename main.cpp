@@ -16,7 +16,6 @@ int main(){
     );
     json params;
     obj->getCurl("stop", params);
-    std::cout << obj->str_buffer << std::endl;
     std::cout << obj->response << std::endl;
     return 0;
 }

@@ -186,7 +186,7 @@ class Komodo::Kmd{
         curl_easy_setopt(this->curl, CURLOPT_DEFAULT_PROTOCOL, "http");
         curl_easy_setopt(this->curl, CURLOPT_POST, 1L);
         curl_easy_setopt(this->curl, CURLOPT_PORT, this->port);
-        curl_easy_setopt(this->curl, CURLOPT_USERPWD, this->username+":"+this->password);
+        curl_easy_setopt(this->curl, CURLOPT_USERPWD, "user:pass");
         curl_easy_setopt(this->curl, CURLOPT_HTTPHEADER, headers);
         curl_easy_setopt(this->curl, CURLOPT_WRITEFUNCTION, write_callback);
         curl_easy_setopt(this->curl, CURLOPT_WRITEDATA, &this->str_buffer);
